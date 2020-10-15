@@ -8,7 +8,7 @@
 
 #page-map aside {
   width: 440px;
-  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  background: linear-gradient(329.54deg, #f7fcfd 0%, #00c7c7 100%);
   padding: 80px;
 
   display: flex;
@@ -39,10 +39,16 @@
   font-weight: 800;
 }
 
+#page-map .leaflet-container {
+  z-index: 5;
+}
+
 #page-map .create-orphanage {
   position: absolute;
   right: 40px;
   bottom: 40px;
+
+  z-index: 10;
 
   width: 64px;
   height: 64px;
@@ -52,4 +58,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transform: background-color 0.2s;
+}
+
+#page-map .create-orphanage:hover {
+  background: #00c7c7;
 }
